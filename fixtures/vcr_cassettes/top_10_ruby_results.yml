@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.stackoverflow.com/1.1/questions?pagesize=10&tagged=Ruby
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      X-Aspnetmvc-Version:
+      - '4.0'
+      X-Ratelimit-Max:
+      - '300'
+      X-Ratelimit-Current:
+      - '295'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Aspnet-Version:
+      - 4.0.30319
+      Date:
+      - Sun, 04 Aug 2013 02:38:03 GMT
+      Content-Length:
+      - '1702'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Sun, 04 Aug 2013 02:38:04 GMT
+recorded_with: VCR 2.5.0

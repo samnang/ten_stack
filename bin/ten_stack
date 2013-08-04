@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../lib/ten_stack', __FILE__)
+
+tag = ARGV[0]
+
+client = TenStack.configure do |c|
+  c.domain = "stackoverflow.com"
+end
+
+results = client.top_10_questions_by_tag(tag)
+results.each do |r|
+  puts "*" * 80
+  puts "title: #{r['title']}" 
+  puts "tags: #{r['tags']}" 
+  puts "url: #{r['question_url']}" 
+end
